@@ -1,0 +1,4 @@
+- After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+=> Since Java is pass-by-value, when the method swap is called, it would get copies of references to jungleDVD and cinderellaDVD. When o1 and o2 are swapped, this only affects the local copies of the references, the original references jungleDVD and cinderellaDVD remain unchanged. Besides, the actual DigitalVideoDisc objects were not modified, so their titles stayed the same.
+- After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+=> In this method, the title of jungleDVD is directly changed using setter function implemented in the original class instead of swapping function. Therefore, its title is replaced by cinderellaDVD's. 
